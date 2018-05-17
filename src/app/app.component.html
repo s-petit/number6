@@ -1,0 +1,44 @@
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
+<mat-toolbar class="mat-elevation-z6" color="primary">
+   <span class="title">{{title}}</span>
+   <span class="title" style="color: #red;">{{error}}</span>
+</mat-toolbar>
+
+<br/><br/>
+
+<div style="align-content: center">
+
+   <button mat-icon-button (click)="refresh()">
+      <mat-icon aria-label="button">refresh</mat-icon>
+   </button>
+   <button mat-icon-button (click)="down()">
+      <mat-icon aria-label="button">arrow_downward</mat-icon>
+   </button>
+   <button mat-icon-button (click)="up()">
+      <mat-icon aria-label="button">arrow_upward</mat-icon>
+   </button>
+   <button mat-icon-button (click)="left()">
+      <mat-icon aria-label="button">arrow_back</mat-icon>
+   </button>
+   <button mat-icon-button (click)="right()">
+      <mat-icon aria-label="button">arrow_forward</mat-icon>
+   </button>
+
+   <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+
+   <button mat-icon-button (click)="save()">
+      <mat-icon aria-label="button">save</mat-icon>
+   </button>
+   <button mat-icon-button (click)="load()">
+      <mat-icon aria-label="button">center_focus_strong</mat-icon>
+   </button>
+
+</div>
+
+
+<br/><br/>
+
+
+<img src="{{url}}" style="transform: rotate(180deg);"/>
